@@ -1,0 +1,123 @@
+.user-container{
+    background-color: white;
+    margin: 1.5rem;
+   
+   
+    /* padding: 1rem; */
+    border-radius: 1rem;
+    display: flex;
+    gap: 1rem;
+    transition: all 0.5s;
+    align-items: center;
+    width: 300px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-height: 350px;
+    margin-right: 0;
+    
+
+   
+}
+
+.add-user-form{
+    display: none;
+}
+.addButton{
+    margin: 20px;
+    display: inline;
+}
+
+
+span {
+  content: "\2192";
+}
+
+body{
+    background: linear-gradient(#e66465, #9198e5) no-repeat !important;
+    height: 100%;
+}
+
+.add{
+    display: none;
+}
+.getRepo{
+    display: none;
+}
+.edit-user-form{
+    display: none;
+}
+
+.user-list{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.access_button{
+    opacity: 0;
+    transition: all 1s;
+    display: inline;
+    flex-direction: column;
+}
+
+button{
+    background-color: white;
+}
+
+button:hover{
+    background-color: gray;
+}
+
+.user-avatar{
+    display: inline-flex;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    object-fit: fill;
+    margin-top: 1rem;
+}
+
+.user-name{
+    font-size: 1.4rem;
+    font-family: sans-serif;
+}
+
+.user-container:hover{
+    transform: scale(1.05);
+    opacity: 1;
+    background-color: crimson;
+}
+
+.user-container:hover .user-name{
+    color: white;
+    
+}
+.user-container:hover a{
+    color: white;
+}
+
+.user-container:hover .access_button{
+    opacity: 1;
+}
+
+@media (min-width:615px){
+    .user-list{
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+@media (min-width:800px){
+    .user-list{
+        grid-template-columns: 1fr 1fr 1fr ;
+    }
+
+}
+
+
+@media (min-width:1000px){
+    .user-list{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+}
+
+
+
